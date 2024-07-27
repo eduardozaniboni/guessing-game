@@ -3,6 +3,7 @@ const btnTry = document.querySelector("#btnTry");
 const btnReset = document.querySelector("#btnReset");
 const screen1 = document.querySelector(".screen1");
 const screen2 = document.querySelector(".screen2");
+const ret = document.querySelector(".return");
 let randomNumber = Math.round(Math.random() * 10);
 let xAttempts = 1;
 
@@ -31,6 +32,7 @@ function handleTryClick(event) {
     xAttempts++;
   } else {
     alert("O numero escolhido deve estar entre 0 e 10");
+    ret.innerHTML = 'Você ainda não acertou, continue'
   }
 }
 
