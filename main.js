@@ -28,11 +28,11 @@ function handleTryClick(event) {
         "h2"
       ).innerHTML = `Voce acertou em ${xAttempts} tentativas.`;
     }
+    ret.innerHTML = 'Você ainda não acertou, continue';
     inputNumber.value = "";
     xAttempts++;
   } else {
     alert("O numero escolhido deve estar entre 0 e 10");
-    ret.innerHTML = 'Você ainda não acertou, continue'
   }
 }
 
